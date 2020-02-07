@@ -1,0 +1,47 @@
+{
+	"Siddharth": {
+		"First_Name": "Siddharth",
+		"Zip": 500038,
+		"Address": "BTM_2nd_Stage",
+		"Last_Name": "Singh",
+		"State": "Bengaluru",
+		"City": "Bangalore",
+		"Contact": 7894555666
+	},
+	"Sambit": {
+		"First_Name": "Sambit",
+		"Zip": 768109,
+		"Address": "Purunagarh",
+		"Last_Name": "Khadiratna",
+		"State": "Odisha",
+		"City": "Deigarh",
+		"Contact": 7894555333
+	},
+	"Subham": {
+		"First_Name": "Subham",
+		"Zip": 768108,
+		"Address": "WardNO-3",
+		"Last_Name": "Goel",
+		"State": "Odisha",
+		"City": "Deogarh",
+		"Contact": 8563252525
+	},
+	"Vishal": {
+		"First_Name": "Vishal",
+		"Zip": 226026,
+		"Address": "AlamBagh",
+		"Last_Name": "Yadav",
+		"State": "UP",
+		"City": "Lucknow",
+		"Contact": 7060729391
+	},
+	"Rupesh": {
+		"First_Name": "Rupesh",
+		"Zip": 50036,
+		"Address": "SilkBoard",
+		"Last_Name": "Patil",
+		"State": "Bengaluru",
+		"City": "Bangalore",
+		"Contact": 7852003311
+	}
+}

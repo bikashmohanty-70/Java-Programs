@@ -1,0 +1,16 @@
+{
+	"Wheat": {
+		"Price": 6.0,
+		"Weight(KG)": 45.0
+	},
+	"Pulses": {
+		"Price": 76.0,
+		"Weight(KG)": 56.0,
+		"Name": "th"
+	},
+	"Rice": {
+		"Price": 3.0,
+		"Weight(KG)": 2.0,
+		"Name": "sfsd"
+	}
+}

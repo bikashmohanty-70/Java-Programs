@@ -1,0 +1,59 @@
+{
+	"Vicy_Riario_Winchester": {
+		"Availability": "8am",
+		"Specialization": "Dermatologist",
+		"Appointments": [
+			{
+				"M95ajXyl": "Raghav"
+			},
+			{
+				"hg3pgCGC": "Rajsekhar"
+			}
+		],
+		"ID": "7qst8AyX",
+		"Name": "Vicy_Riario_Winchester"
+	},
+	"Vicky_Lannister": {
+		"Availability": "2pm",
+		"Specialization": "Psychiatrist",
+		"Appointments": [
+			{
+				"lFnktbDR": "Sundar_Nagar"
+			},
+			{
+				"Y2nDeg70": "Chrish_Hemsworth"
+			},
+			{
+				"7biTmTNZ": "rrrr"
+			},
+			{
+				"q7cdSOBe": "RadhaKrishna"
+			}
+		],
+		"ID": "VG4fzH10",
+		"Name": "Vicky_Lannister"
+	},
+	"Bikash_Kumar_Mohanty": {
+		"Availability": "11am",
+		"Specialization": "CardioLogist",
+		"Appointments": [
+			{
+				"sr7qXK9T": "Preetiy_PriyaDarshini"
+			},
+			{
+				"ASRCunm0": "Vishal_Yadav"
+			},
+			{
+				"VUVDUTJf": "Khilji"
+			},
+			{
+				"dvMh1Xui": "RanVijay"
+			},
+			{
+				"y98llM9x": "Ritesh"
+			}
+		],
+		"ID": "Z8V41aiR",
+		"Name": "Bikash_Kumar_Mohanty"
+	}
+}

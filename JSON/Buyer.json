@@ -1,0 +1,50 @@
+{
+	"Amresh": {
+		"Stocks_Bought": 1,
+		"Stock_Bought_From: ": "TCS",
+		"Buyer_Name": "Amresh",
+		"Share Name": "TCS_Telecom",
+		"Trade_Initiated_on": "Thu Dec 19 16:49:03 IST 2019",
+		"Amount_Paid": 45698
+	},
+	"Subham": {
+		"Stocks_Bought": 3,
+		"Stock_Bought_From: ": "Cocacola",
+		"Buyer_Name": "Subham",
+		"Share Name": "newTropicanaFalvour",
+		"Trade_Initiated_on": "Thu Dec 19 17:01:05 IST 2019",
+		"Amount_Paid": 226899
+	},
+	"Ritesh": {
+		"Stocks_Bought": 2,
+		"Stock_Bought_From: ": "TCS",
+		"Buyer_Name": "Ritesh",
+		"Share Name": "TCS_Telecom",
+		"Trade_Initiated_on": "Thu Dec 19 16:49:03 IST 2019",
+		"Amount_Paid": 91396
+	},
+	"Ghamandi_Rana": {
+		"Stocks_Bought": 3,
+		"Stock_Bought_From: ": "TCS",
+		"Buyer_Name": "Ghamandi_Rana",
+		"Share Name": "TCS_Telecom",
+		"Trade_Initiated_on": "Thu Dec 19 16:44:54 IST 2019",
+		"Amount_Paid": 137094
+	},
+	"Bobby": {
+		"Stocks_Bought": 2,
+		"Stock_Bought_From: ": "TCS",
+		"Buyer_Name": "Bobby",
+		"Share Name": "TCS_Telecom",
+		"Trade_Initiated_on": "Thu Dec 19 17:26:35 IST 2019",
+		"Amount_Paid": 91396
+	},
+	"Billu": {
+		"Stocks_Bought": 2,
+		"Stock_Bought_From: ": "TCS",
+		"Buyer_Name": "Billu",
+		"Share Name": "TCS_Telecom",
+		"Trade_Initiated_on": "Thu Dec 19 17:13:09 IST 2019",
+		"Amount_Paid": 91396
+	}
+}

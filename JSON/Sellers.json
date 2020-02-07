@@ -1,0 +1,40 @@
+{
+	"TCS": {
+		"Date_and_Time": "Thu Dec 19 17:40:59 IST 2019",
+		"No_of_Shares": 96,
+		"Buyer_Name": {
+			"Human": {
+				"Date_and_Time": "Thu Dec 19 17:40:59 IST 2019",
+				"Buyer": "Human",
+				"Shares_Bought": 2,
+				"Amount_Paid": 91396
+			},
+			"Shubham": {
+				"Date_and_Time": "Thu Dec 19 17:40:59 IST 2019",
+				"Buyer": "Shubham",
+				"Shares_Bought": 2,
+				"Amount_Paid": 91396
+			}
+		},
+		"Share_Price": 45698.0,
+		"Shares_Bought": 2,
+		"Name": "TCS_Telecom",
+		"Amount_Paid": 91396
+	},
+	"Cocacola": {
+		"Date_and_Time": "Thu Dec 19 17:26:35 IST 2019",
+		"No_of_Shares": 177,
+		"Buyer_Name": {
+			"Arman": {
+				"Date_and_Time": "Thu Dec 19 17:26:35 IST 2019",
+				"Buyer": "Arman",
+				"Shares_Bought": 2,
+				"Amount_Paid": 91396
+			}
+		},
+		"Share_Price": 75633.0,
+		"Shares_Bought": 3,
+		"Name": "newTropicanaFalvour",
+		"Amount_Paid": 226899
+	}
+}
