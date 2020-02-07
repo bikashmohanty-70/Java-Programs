@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 public class ArrayTwoDUsingPrintWriter 
 {
@@ -13,7 +13,7 @@ public class ArrayTwoDUsingPrintWriter
 	public static void main(String[] args) throws IOException 
 	{
 		//System.out.print("Enter FIle NAme: ");
-		//String fileName = Utility.inputString();
+		//String fileName = InputUtility.inputString();
 		File file = new File("C:/Users/Admin/Desktop/Bikash.txt");
 		if(file.createNewFile())
 			System.out.println("Successfully Created");
@@ -29,9 +29,9 @@ public class ArrayTwoDUsingPrintWriter
 		
 		System.out.println("Let's make a Two D array and print it in a FIle..!!");
 		System.out.print("\nHow Many number of rows do u want in Tow_D_Array: ");
-		int rows = Utility.inputInteger();
+		int rows = InputUtility.inputInteger();
 		System.out.println("\nHow many columns do you want in Two_D_Array: ");
-		int cols = Utility.inputInteger();
+		int cols = InputUtility.inputInteger();
 		
 		int[][] array = new int[rows][cols];
 		
@@ -41,7 +41,7 @@ public class ArrayTwoDUsingPrintWriter
 		{
 			for (int j = 0; j < cols; j++) 
 			{
-				array[i][j] = Utility.inputInteger();
+				array[i][j] = InputUtility.inputInteger();
 			}
 			System.out.println();
 		}

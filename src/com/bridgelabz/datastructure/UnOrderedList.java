@@ -9,7 +9,10 @@ package com.bridgelabz.datastructure;
  *				add it to the list, and if it found then remove the word from the List. In the
  *				end save the list into a file
  */
-import java.io.*;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.LinkedListFinal;
 import com.bridgelabz.utility.Utility;
 
@@ -22,7 +25,7 @@ public class UnOrderedList
 
 		System.out.println("Enter the word you want to search :");
 
-		String item = Utility.inputStringLine();
+		String item = InputUtility.inputStringLine();
 
 		//read from file and assign into String s
 

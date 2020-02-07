@@ -1,15 +1,15 @@
 package com.bridgelabz.algorithm;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 public class ComparingArraysQ1 
 {
 	public static void main(String[] args) 
 	{
 		System.out.print("Enter a String: ");
-		String str1 = Utility.inputString();
+		String str1 = InputUtility.inputString();
 		/*
-		 * System.out.print("Enter 2nd String: "); String str2 = Utility.inputString();
+		 * System.out.print("Enter 2nd String: "); String str2 = InputUtility.inputString();
 		 */
 		ComparingArraysQ1 permute = new ComparingArraysQ1();
 		permute.permutation(str1, 0, str1.length()-1);

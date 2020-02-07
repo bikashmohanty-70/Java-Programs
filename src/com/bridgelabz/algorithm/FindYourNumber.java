@@ -1,7 +1,7 @@
 package com.bridgelabz.algorithm;
 
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 public class FindYourNumber {
 
@@ -22,7 +22,7 @@ public class FindYourNumber {
 	void start() 
 	{
 		System.out.print("Enter limit N: ");
-		N = Utility.inputInteger();
+		N = InputUtility.inputInteger();
 
 		numberArray = new int[N];	//	array initialization
 		
@@ -51,7 +51,7 @@ public class FindYourNumber {
 			int	middle = (first + last) / 2;
 			count++;
 			System.out.println("Is number between " + first  + " and " + middle + "?");
-			String temp = Utility.inputString();
+			String temp = InputUtility.inputString();
 			if(temp.equals("y")) {
 				change(middle+1 , last);
 				binarySearch(first , middle);				

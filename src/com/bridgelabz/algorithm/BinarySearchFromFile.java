@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 
 public class BinarySearchFromFile 
@@ -18,9 +18,9 @@ public class BinarySearchFromFile
 		
 		int result = 0;
 		System.out.println("ENter Path for file: " );
-		String filePath = Utility.inputString();
+		String filePath = InputUtility.inputString();
 		System.out.println("Enter Name of the File: ");
-		String fileName = Utility.inputString();
+		String fileName = InputUtility.inputString();
 		List<String> list = new ArrayList<>();
 		List<String> tempList = new ArrayList<>();
 		System.out.println("Enter Words: ");
@@ -28,7 +28,7 @@ public class BinarySearchFromFile
 		int i = 0;
 		while(i < 5)
 		{
-			String words = Utility.inputString();
+			String words = InputUtility.inputString();
 			list.add(words);
 			i++;
 		}
@@ -36,7 +36,7 @@ public class BinarySearchFromFile
 		System.out.println(list);
 		
 		System.out.println("Enter Word to Search");
-		String toSearch = Utility.inputString();
+		String toSearch = InputUtility.inputString();
 		
 		try
 		{

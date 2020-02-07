@@ -13,6 +13,7 @@ package com.bridgelabz.datastructure;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.LinkedListFinal;
 import com.bridgelabz.utility.Utility;
 
@@ -25,7 +26,7 @@ public class OrderedList
 		
 		
 		System.out.println("Enter a Number to Search: ");
-		int number = Utility.inputInteger();
+		int number = InputUtility.inputInteger();
 		
 		/*
 		 * Below is to read the file from the given path. NOTE: File Must have some

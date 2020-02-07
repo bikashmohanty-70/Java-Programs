@@ -1,6 +1,6 @@
 package com.bridgelabz.algorithm;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 public class CustomizedMessage 
 {
@@ -14,11 +14,11 @@ public class CustomizedMessage
 		
 		System.out.println();
 		System.out.println("ENter First Name");
-		String fname = Utility.inputString();
+		String fname = InputUtility.inputString();
 		System.out.println("Enter Last Name: ");
-		String lname = Utility.inputString();
+		String lname = InputUtility.inputString();
 		System.out.println("Enter Your Phone Number");
-		String number = Utility.inputString();
+		String number = InputUtility.inputString();
 		
 		check(fname, lname, number);
 	}

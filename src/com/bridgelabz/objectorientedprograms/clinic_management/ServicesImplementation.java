@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
-
 import java.util.Iterator;
 import java.util.Set;
 
@@ -18,16 +17,18 @@ import org.json.simple.JSONArray;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.Utility;
 
 
 public class ServicesImplementation implements IServices 
 {
 
-	static final String PATH_PATIENTS = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Patients.json";
-	static final String PATH_DOCTORS = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Doctors.json";
-	static final String PATH_APPOINTMENT = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\AppointmentRecord.json";
-	static final String APPOINTMENT_SCHEDULED = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\ScheduledAppointment.json";
+	private static final String PATH_PATIENTS = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Patients.json";
+	private static final String PATH_DOCTORS = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Doctors.json";
+	private static final String PATH_APPOINTMENT = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\AppointmentRecord.json";
+	private static final String APPOINTMENT_SCHEDULED = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\ScheduledAppointment.json";
 	JSONParser parser = new JSONParser();
 
 	
@@ -81,11 +82,11 @@ public class ServicesImplementation implements IServices
 		System.out.println("Enter Patient Information\n");
 
 		System.out.println("Name : ");
-		patient.setName(Utility.inputString());
+		patient.setName(InputUtility.inputString());
 		patientObject.put("Name", patient.getName());
 
 		System.out.println("Age : ");
-		patient.setAge(Utility.inputInteger());
+		patient.setAge(InputUtility.inputInteger());
 		patientObject.put("Age", patient.getAge());
 
 		String patientId = generateId();
@@ -93,7 +94,7 @@ public class ServicesImplementation implements IServices
 		patientObject.put("ID", patient.getId());
 
 		System.out.println("Mobile number :");
-		patient.setMobile_number(Utility.inputLong());
+		patient.setMobile_number(InputUtility.inputLong());
 		patientObject.put("Mobile_Number", patient.getMobile_number());
 
 		patientObject.put("Registered_On", dtf.format(now));
@@ -101,7 +102,7 @@ public class ServicesImplementation implements IServices
 		dipalyAvailableDoctors();
 
 		System.out.println("Take Appointment of a (Doctor's Name/Speciality): ");
-		String doctorName = Utility.inputString();
+		String doctorName = InputUtility.inputString();
 
 		appointment(patientObject, doctorName);
 
@@ -238,7 +239,7 @@ public class ServicesImplementation implements IServices
 		System.out.println("Enter Doctor Information\n");
 
 		System.out.println("Enter a name : ");
-		doctor.setName(Utility.inputString());
+		doctor.setName(InputUtility.inputString());
 		doctorObject.put("Name", doctor.getName());
 
 		String doctorId = generateId();
@@ -246,11 +247,11 @@ public class ServicesImplementation implements IServices
 		doctorObject.put("ID", doctor.getId());
 
 		System.out.println("Enter a specialization : ");
-		doctor.setSpecialization(Utility.inputString());
+		doctor.setSpecialization(InputUtility.inputString());
 		doctorObject.put("Specialization", doctor.getSpecialization());
 
 		System.out.println("Enter time of availability : ");
-		doctor.setAvailability(Utility.inputString());
+		doctor.setAvailability(InputUtility.inputString());
 		doctorObject.put("Availability", doctor.getAvailability());
 
 		doctorObject.put("Appointments", arrayOfAppointment); //Unusual try
@@ -412,7 +413,7 @@ public class ServicesImplementation implements IServices
 		updateObject = readDetails(PATH_PATIENTS);
 
 		System.out.print("Enter a ID :");
-		int patientId = Utility.inputInteger();
+		int patientId = InputUtility.inputInteger();
 		String value = Integer.toString(patientId);
 
 		innerObject = (JSONObject) updateObject.get(value);
@@ -427,13 +428,13 @@ public class ServicesImplementation implements IServices
 		System.out.println("2. Age ");
 		System.out.println("3. Mobile Number ");
 		System.out.println("4. All details ");
-		int choice = Utility.inputInteger();
+		int choice = InputUtility.inputInteger();
 
 		switch (choice) 
 		{
 		case 1:
 			System.out.println("Enter a new name : ");
-			patient.setName(Utility.inputString());
+			patient.setName(InputUtility.inputString());
 			innerObject.replace("Name", patient.getName());
 			updateObject.put(value, innerObject);
 			ReadWriteJSONClinicManagement.writeToFile(PATH_DOCTORS, updateObject);
@@ -441,14 +442,14 @@ public class ServicesImplementation implements IServices
 
 		case 2:
 			System.out.println("Enter new age :");
-			patient.setAge(Utility.inputInteger());
+			patient.setAge(InputUtility.inputInteger());
 			innerObject.replace("Age", patient.getAge());
 			updateObject.put(value, innerObject);
 			ReadWriteJSONClinicManagement.writeToFile(PATH_DOCTORS, updateObject);
 			break;
 		case 3:
 			System.out.println("Enter new mobile number");
-			patient.setMobile_number(Utility.inputLong());
+			patient.setMobile_number(InputUtility.inputLong());
 			innerObject.replace("Mobile_Number", patient.getMobile_number());
 			updateObject.put(value, innerObject);
 			ReadWriteJSONClinicManagement.writeToFile(PATH_DOCTORS, updateObject);
@@ -456,15 +457,15 @@ public class ServicesImplementation implements IServices
 
 		case 4:
 			System.out.println("Enter a new name : ");
-			patient.setName(Utility.inputString());
+			patient.setName(InputUtility.inputString());
 			innerObject.replace("Name", patient.getName());
 
 			System.out.println("Enter new age :");
-			patient.setAge(Utility.inputInteger());
+			patient.setAge(InputUtility.inputInteger());
 			innerObject.replace("Age", patient.getAge());
 
 			System.out.println("Enter new mobile number");
-			patient.setMobile_number(Utility.inputLong());
+			patient.setMobile_number(InputUtility.inputLong());
 			innerObject.replace("Mobile_Number", patient.getMobile_number());
 
 			updateObject.put(value, innerObject);
@@ -484,7 +485,7 @@ public class ServicesImplementation implements IServices
 		updateObject = readDetails(PATH_DOCTORS);
 
 		System.out.print("Enter a ID :");
-		int doctorId = Utility.inputInteger();
+		int doctorId = InputUtility.inputInteger();
 		String value = Integer.toString(doctorId);
 
 		innerObject = (JSONObject) updateObject.get(value);
@@ -499,11 +500,11 @@ public class ServicesImplementation implements IServices
 		System.out.println("2. Specialization ");
 		System.out.println("3. Availability ");
 		System.out.println("4. All details ");
-		int choice = Utility.inputInteger();
+		int choice = InputUtility.inputInteger();
 		switch (choice) {
 		case 1:
 			System.out.println("Enter a new name : ");
-			doctor.setName(Utility.inputString());
+			doctor.setName(InputUtility.inputString());
 			innerObject.replace("Name", doctor.getName());
 			updateObject.put(value, innerObject);
 			ReadWriteJSONClinicManagement.writeToFile(PATH_DOCTORS, updateObject);
@@ -511,14 +512,14 @@ public class ServicesImplementation implements IServices
 
 		case 2:
 			System.out.println("Enter new Specialization :");
-			doctor.setSpecialization(Utility.inputString());
+			doctor.setSpecialization(InputUtility.inputString());
 			innerObject.replace("Specialization", doctor.getSpecialization());
 			updateObject.put(value, innerObject);
 			ReadWriteJSONClinicManagement.writeToFile(PATH_DOCTORS, updateObject);
 			break;
 		case 3:
 			System.out.println("Enter new Availability");
-			doctor.setAvailability(Utility.inputString());
+			doctor.setAvailability(InputUtility.inputString());
 			innerObject.replace("Availability", doctor.getAvailability());
 			updateObject.put(value, innerObject);
 			ReadWriteJSONClinicManagement.writeToFile(PATH_DOCTORS, updateObject);
@@ -526,15 +527,15 @@ public class ServicesImplementation implements IServices
 
 		case 4:
 			System.out.println("Enter a new name : ");
-			doctor.setName(Utility.inputString());
+			doctor.setName(InputUtility.inputString());
 			innerObject.replace("Name", doctor.getName());
 
 			System.out.println("Enter new Specialization :");
-			doctor.setSpecialization(Utility.inputString());
+			doctor.setSpecialization(InputUtility.inputString());
 			innerObject.replace("Specialization", doctor.getSpecialization());
 
 			System.out.println("Enter new Availability");
-			doctor.setAvailability(Utility.inputString());
+			doctor.setAvailability(InputUtility.inputString());
 			innerObject.replace("Availability", doctor.getAvailability());
 
 			updateObject.put(value, innerObject);

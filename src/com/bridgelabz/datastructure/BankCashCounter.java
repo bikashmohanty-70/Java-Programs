@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
+import com.bridgelabz.utility.InputUtility;
+
 /**
  * @author Bikash Mohanty
  * @version 1.0
@@ -15,7 +17,6 @@ import java.util.ArrayList;
  */
 
 import com.bridgelabz.utility.Queue;
-import com.bridgelabz.utility.Utility;
 
 public class BankCashCounter 
 {
@@ -93,12 +94,12 @@ public class BankCashCounter
 		int ch = 0;
 		
 		System.out.print("Number of Customers in the Queue: ");
-		int customers_in_queue = Utility.inputInteger();
+		int customers_in_queue = InputUtility.inputInteger();
 		System.out.println("Enter Ticket Numbers of those CUstomers: ");
 		
 		for (int i = 0; i < customers_in_queue; i++) 
 		{
-			customers.enQueue(now, Utility.inputString());	//to store the customers in a queue
+			customers.enQueue(now, InputUtility.inputString());	//to store the customers in a queue
 		}
 		
 		System.out.println();
@@ -114,13 +115,13 @@ public class BankCashCounter
 			System.out.println("\nTicket Number: "+str+ "\n");
 			System.out.println("1. DEPOSIT\n2. WITHDRAW\n3. MINI STATEMENT\n4. PEOPLE IN QUEUE\n5. EXIT");
 			System.out.print("Eneter Choice: ");
-			ch = Utility.inputInteger();
+			ch = InputUtility.inputInteger();
 			
 			switch (ch) 
 			{
 			case 1:
 				System.out.print("\nEnter Amount to Deposit: ");
-				int amount = Utility.inputInteger();
+				int amount = InputUtility.inputInteger();
 				queue.enQueue(now, amount);
 				System.out.println("You've Successfully Deposited your Amount");
 				System.out.print("Current Balance: "+ deposit(amount));
@@ -130,7 +131,7 @@ public class BankCashCounter
 				
 			case 2:
 				System.out.println("Enter Amount to Withdraw: ");
-				int amountWithdraw = Utility.inputInteger();
+				int amountWithdraw = InputUtility.inputInteger();
 				if(balance >= amountWithdraw)
 				{
 					queue.enQueue(now, amountWithdraw);

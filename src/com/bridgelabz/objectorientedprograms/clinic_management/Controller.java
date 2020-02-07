@@ -1,6 +1,6 @@
 package com.bridgelabz.clinic_management;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 /**
  *@Author   :  Bikash Mohanty
@@ -11,6 +11,8 @@ import com.bridgelabz.utility.Utility;
 
 public class Controller 
 {
+	private static final String FILENAME = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Patients.json";
+	private static final String DOCTOR_FILE = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Doctors.json";
 	public static void main(String[] args) {
 
 		IServices service = new ServicesImplementation();
@@ -21,7 +23,7 @@ public class Controller
 			System.out.println("\t1. Patients Entry");
 			System.out.println("\t2. Doctors Entry");
 			System.out.println("\t3. Exit ");
-			int choice = Utility.inputInteger();
+			int choice = InputUtility.inputInteger();
 			switch (choice) {
 			case 1:
 				System.out.println("\t\t-:Patients File:- \n\t-----------------------------------");
@@ -29,20 +31,19 @@ public class Controller
 				System.out.println("\t\t2. View patients File");
 				System.out.println("\t\t3. Search Patients");
 				System.out.println("\t\t4. Update Patient's Records");
-				int choice1 = Utility.inputInteger();
+				int choice1 = InputUtility.inputInteger();
 				switch (choice1) {
 				case 1:
 					service.addPatients();
 					break;
 
 				case 2:
-					System.out.println(service.readDetails(
-							"C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Patients.json"));
+					System.out.println(service.readDetails(FILENAME));
 					break;
 
 				case 3:
 					System.out.print("Enter Patient's Name :");
-					String patientId = Utility.inputString();
+					String patientId = InputUtility.inputString();
 					service.readPatientDetails("Id", patientId); // converting integer to string
 					break;
 
@@ -61,21 +62,20 @@ public class Controller
 				System.out.println("\t\t2. View Doctors File");
 				System.out.println("\t\t3. Search Doctor");
 				System.out.println("\t\t4. Update Doctor's Record");
-				int choice2 = Utility.inputInteger();
+				int choice2 = InputUtility.inputInteger();
 				switch (choice2) {
 				case 1:
 					service.addDoctors();
 					break;
 
 				case 2:
-					System.out.println(service.readDetails(
-							"C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Doctors.json"));
+					System.out.println(service.readDetails(DOCTOR_FILE));
 					break;
 
 				case 3:
 					System.out.print("Enter a Name :");
-					//int doctorId = Utility.inputInteger();
-					String docName = Utility.inputString();
+					//int doctorId = InputUtility.inputInteger();
+					String docName = InputUtility.inputString();
 					service.readDoctorDetails("Id", docName);
 					break;
 

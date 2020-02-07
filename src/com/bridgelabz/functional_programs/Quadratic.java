@@ -1,5 +1,5 @@
 package com.bridgelabz.functional_programs;
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 public class Quadratic 
 {
@@ -7,11 +7,11 @@ public class Quadratic
 	{
 		System.out.println("TO FIND ROOTS OF AN EQUATTION: ");
 		System.out.println("Enter Value for 'a': ");
-		double a = Utility.inputDouble();
+		double a = InputUtility.inputDouble();
 		System.out.println("Enter Value for 'b': ");
-		double b = Utility.inputDouble();
+		double b = InputUtility.inputDouble();
 		System.out.println("Enter Value for 'c': ");
-		double c = Utility.inputDouble();
+		double c = InputUtility.inputDouble();
 		System.out.println("\nRoots Of the equation are: ");
 		double delta =Math.abs( b*b-4*a*c);
 		System.out.println(delta);

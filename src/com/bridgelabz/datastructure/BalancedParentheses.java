@@ -1,6 +1,6 @@
 package com.bridgelabz.datastructure;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 /**
  * @Author   :  Bikash Mohanty
@@ -76,7 +76,7 @@ public class BalancedParentheses
 	public static void main(String[] args) 
 	{
 		System.out.println("Enter the expression : ");
-		char []exp = Utility.inputStringLine().toCharArray();
+		char []exp = InputUtility.inputStringLine().toCharArray();
 		int length = exp.length;
 
 		//checking the parenthesis is balanced or not

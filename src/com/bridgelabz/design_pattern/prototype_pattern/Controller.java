@@ -8,7 +8,8 @@ package com.bridgelabz.design_pattern.prototype_pattern;
  * Purpose : Prototype design pattern program 
  */
 import java.util.List;
-import com.bridgelabz.utility.Utility;
+
+import com.bridgelabz.utility.InputUtility;
 
 public class Controller {
 
@@ -27,9 +28,9 @@ public class Controller {
 		System.out.println("2. Remove");
 		System.out.println("3. Exit");
 
-		int choice = Utility.inputInteger();
+		int choice = InputUtility.inputInteger();
 		System.out.println("How many Data you have");
-		int number = Utility.inputInteger();
+		int number = InputUtility.inputInteger();
 		List<String> list1 = empsNew1.getEmpList();
 
 		while (number != 0) 
@@ -38,13 +39,13 @@ public class Controller {
 			{
 			case 1:
 				System.out.println("Enter Name of the Employee to add ");
-				list.add(Utility.inputString());
+				list.add(InputUtility.inputString());
 				number--;
 				break;
 
 			case 2:
 				System.out.println("Enter Name of the Employee to remove");
-				list.remove(Utility.inputString());
+				list.remove(InputUtility.inputString());
 				number--;
 				break;
 

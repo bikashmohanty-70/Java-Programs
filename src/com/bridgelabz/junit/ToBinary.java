@@ -1,15 +1,6 @@
 package com.bridgelabz.junit;
 
-/**
- * @author Bikash Mohanty
- * @version 1.0
- * @created 21st Nov 2019
- * 
- * Purpose : to calculate the Binary of a given decimal and decompose the input into a power of 2
- * 			 i.e 106 = 2 + 8 + 32 + 64
- */
-
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 public class ToBinary 
 {
@@ -17,7 +8,7 @@ public class ToBinary
 	public static void main(String[] args) 
 	{
 		System.out.println("Enter a Decimal Number to convert into Binary :");
-		int decimal = Utility.inputInteger();
+		int decimal = InputUtility.inputInteger();
 		long x = decimal;
 		checkBinary(decimal, x);		
 	}

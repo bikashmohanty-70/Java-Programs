@@ -1,5 +1,6 @@
 package com.bridgelabz.basiccoreproblems;
 
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.Utility;
 /**
  * 
@@ -25,7 +26,7 @@ public class FlipCoin
 		{
 
 			System.out.println("How Many Times The Coin Should Flip: ");
-			int flips = Utility.inputInteger();
+			int flips = InputUtility.inputInteger();
 			if(Utility.isPositive(flips)) //if entered number is positive then the program will execute
 			{
 				System.out.println("Counter \t\t RnadomlyFlipped \t\t Heads/Tails"); 

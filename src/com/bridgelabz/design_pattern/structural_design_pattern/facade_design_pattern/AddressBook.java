@@ -8,7 +8,7 @@ package com.bridgelabz.design_pattern.structural_design_pattern.facade_design_pa
  */
 import java.sql.SQLException;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 public class AddressBook 
 {
@@ -17,11 +17,11 @@ public class AddressBook
 	{		
 		FacadeDatabse facadeDatabase = new FacadeDatabse();
 		System.out.println("Enter Database Name : ");
-		String datatbase = Utility.inputString();
+		String datatbase = InputUtility.inputString();
 		System.out.println("Enter Username");
-		String username = Utility.inputString();
+		String username = InputUtility.inputString();
 		System.out.println("Enter Password");
-		String password = Utility.inputString();
+		String password = InputUtility.inputString();
 		
 		String query = null;
 		
@@ -29,7 +29,7 @@ public class AddressBook
 		{
 			System.out.println("1. Insert Data\n2. Read Data\n");
 			System.out.println("Enter your Choice");
-			int choice = Utility.inputInteger();
+			int choice = InputUtility.inputInteger();
 			switch (choice) 
 			{
 			case 1:
@@ -38,19 +38,19 @@ public class AddressBook
 				System.out.println("Table Created Successfully...!!!");
 				
 				System.out.println("Enter First Name: ");
-				String fname = Utility.inputString();
+				String fname = InputUtility.inputString();
 				System.out.println("Enter Last Name: ");
-				String lname = Utility.inputString();
+				String lname = InputUtility.inputString();
 				System.out.println("Enter Address: ");
-				String address = Utility.inputString();
+				String address = InputUtility.inputString();
 				System.out.println("Enter City Name: ");
-				String city = Utility.inputString();
+				String city = InputUtility.inputString();
 				System.out.println("Enter State:");
-				String state = Utility.inputString();
+				String state = InputUtility.inputString();
 				System.out.println("Enter ZIP: ");
-				int zip = Utility.inputInteger();
+				int zip = InputUtility.inputInteger();
 				System.out.println("Enter Contact no: ");
-				long contact = Utility.inputLong();
+				long contact = InputUtility.inputLong();
 
 				String sqlQuery1 = "INSERT INTO Address_Book(FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, ZIP, CONTACT) VALUES "
 						+ "('"+fname+"', '"+lname+"', '"+address+"', '"+city+"', '"+state+"', '"+zip+"', '"+contact+"');";

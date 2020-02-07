@@ -1,6 +1,6 @@
 package com.bridgelabz.datastructure;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 class Node1
 {
@@ -167,11 +167,11 @@ public class LinkedList1
 		LinkedListFunction list = new LinkedListFunction();
 		
 		System.out.println("How many items do u want to insert into the list: ");
-		int totalItem = Utility.inputInteger();
+		int totalItem = InputUtility.inputInteger();
 		System.out.println("Enter Items");
 		
 		for(int i = 0; i < totalItem; i++)
-			list.insert(Utility.inputInteger());
+			list.insert(InputUtility.inputInteger());
 		
 		System.out.println("SIze = " +(list.listSize()+1));
 		System.out.print("List: " );
@@ -188,9 +188,9 @@ public class LinkedList1
 		System.out.println("SIze = " +(list.listSize()+1));
 		
 		System.out.println("Insert Position");
-		int pos = Utility.inputInteger();
+		int pos = InputUtility.inputInteger();
 		System.out.println("Enter value");
-		int item = Utility.inputInteger();
+		int item = InputUtility.inputInteger();
 		list.insertAtPosition(item, pos);
 		System.out.println();
 		System.out.print("List: " );

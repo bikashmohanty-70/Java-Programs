@@ -1,5 +1,6 @@
 package com.bridgelabz.basiccoreproblems;
 
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.Utility;
 /**
  * 
@@ -16,7 +17,7 @@ public class PowerOfTwo
 	public static void main(String[] args) 
 	{
 		System.out.println("Enter a Number less than 31 to print power of 2 from 1 to N:  ");
-		int number = Utility.inputInteger();
+		int number = InputUtility.inputInteger();
 		int leap = 0;
 		if(number > 0 && number < 31)
 		{

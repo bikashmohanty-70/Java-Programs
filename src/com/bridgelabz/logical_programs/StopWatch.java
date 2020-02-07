@@ -1,6 +1,6 @@
 package com.bridgelabz.logical_programs;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 /**
  * 
@@ -63,7 +63,7 @@ public class StopWatch
 		Watch s = new Watch();
 		
 		System.out.println("Enter 1 to Start and 2 to Stop:");
-		int n = Utility.inputInteger();
+		int n = InputUtility.inputInteger();
 		if(n == 1)
 		{
 			s.startThread();

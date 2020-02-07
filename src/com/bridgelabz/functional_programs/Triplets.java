@@ -3,7 +3,7 @@ package com.bridgelabz.functional_programs;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 /**
  * 
@@ -23,7 +23,7 @@ public class Triplets
 	public static void main(String[] args) 
 	{
 		System.out.println("Enter Total number of Array Elements you want to insert: ");
-		totalElements = Utility.inputInteger();
+		totalElements = InputUtility.inputInteger();
 		
 		int [] arr = new int[totalElements];
 		System.out.println("Enter " +totalElements+ " Array Elements: ");
@@ -32,7 +32,7 @@ public class Triplets
 		
 		for (int i = 0; i < arr.length; i++) 
 		{
-			arr[i] = Utility.inputInteger();
+			arr[i] = InputUtility.inputInteger();
 		}
 		
 		System.out.print("Triplets ");

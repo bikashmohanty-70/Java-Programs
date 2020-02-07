@@ -1,6 +1,6 @@
 package com.bridgelabz.functional_programs;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 public class Distance 
 {
@@ -11,8 +11,8 @@ public class Distance
 		//int x = Integer.parseInt(args[0]);
 		//int y = Integer.parseInt(args[1]);
 		
-		double x = Utility.inputDouble();
-		double y = Utility.inputDouble();
+		double x = InputUtility.inputDouble();
+		double y = InputUtility.inputDouble();
 		
 		double dist = Math.sqrt(x*x + y*y);
 		System.out.println("Distance From "+x+" and "+y+" to origin (0, 0) is: "+dist);

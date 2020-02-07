@@ -1,6 +1,6 @@
 package com.bridgelabz.datastructure;
 import com.bridgelabz.utility.Dequeue;
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 /**
  * @Author   :  Bikash Mohanty
  * @Version  :  1.0
@@ -41,7 +41,7 @@ public class PallindromeChecker
 	{
 
 		System.out.println("Enter a String : ");
-		String str = Utility.inputStringLine();
+		String str = InputUtility.inputStringLine();
 		
 		if(PallindromeChecker.checkPallindrome(str))
 			System.out.println("Pallindrome");

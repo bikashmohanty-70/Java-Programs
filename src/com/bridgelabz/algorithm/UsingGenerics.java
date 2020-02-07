@@ -1,7 +1,8 @@
 package com.bridgelabz.algorithm;
 
 import java.util.Arrays;
-import com.bridgelabz.utility.Utility;
+
+import com.bridgelabz.utility.InputUtility;
 
 public class UsingGenerics 
 {
@@ -45,19 +46,19 @@ public class UsingGenerics
 	public static void main(String[] args) 
 	{
 		System.out.print("How Many Elements do u want to insert: ");
-		int length = Utility.inputInteger();
+		int length = InputUtility.inputInteger();
 		String [] array = new String[length];
 		System.out.println("Enter Array Elements: ");
 		
 		for(int i = 0; i < array.length; i++)
 		{
-			array[i] = Utility.inputString();
+			array[i] = InputUtility.inputString();
 		}
 		
 		System.out.println("1. Binary Search using Generics.\n2. Insertion Sort Using Generics."
 				+ "\n3. Bubble Sort Using Generics.\nEnter Your Choice: \n");
 		
-		switch(Utility.inputInteger())
+		switch(InputUtility.inputInteger())
 		{
 		case 1:
 			
@@ -68,7 +69,7 @@ public class UsingGenerics
 				System.out.print(str+ " ");
 
 			System.out.println("\nEneter VALUE to search: ");
-			String key = Utility.inputString();
+			String key = InputUtility.inputString();
 			int value = binarySearch(array, 0, array.length - 1, key);
 			if (value == -1) 
 			{

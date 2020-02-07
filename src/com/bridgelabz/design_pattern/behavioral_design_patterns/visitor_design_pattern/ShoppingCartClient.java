@@ -1,6 +1,6 @@
 package com.bridgelabz.design_pattern.behavioral_design_patterns.visitor_design_pattern;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 /**
  * 
@@ -18,7 +18,7 @@ public class ShoppingCartClient
 	public static void main(String[] args) 
 	{
 		System.out.println("ENter Book Name: ");
-		String bookName = Utility.inputString();
+		String bookName = InputUtility.inputString();
 		ItemElement[] items = new ItemElement[]{new Book(20, "1234", bookName),
 				new Fruit(10, 2, "Banana"), new Fruit(5, 5, "Apple")};
 		

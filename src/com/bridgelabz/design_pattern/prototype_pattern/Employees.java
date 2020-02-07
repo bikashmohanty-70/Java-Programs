@@ -6,7 +6,8 @@ package com.bridgelabz.design_pattern.prototype_pattern;
  */
 import java.util.ArrayList;
 import java.util.List;
-import com.bridgelabz.utility.Utility;
+
+import com.bridgelabz.utility.InputUtility;
 
 public class Employees implements Cloneable 
 {
@@ -29,11 +30,11 @@ public class Employees implements Cloneable
 	public void loadData() 
 	{
 		System.out.println("How many data you have");
-		int number = Utility.inputInteger();
+		int number = InputUtility.inputInteger();
 		while (number != 0) 
 		{
 			System.out.println("Enter Name of the Employee");
-			employeeList.add(Utility.inputString());
+			employeeList.add(InputUtility.inputString());
 			number--;
 		}
 	}

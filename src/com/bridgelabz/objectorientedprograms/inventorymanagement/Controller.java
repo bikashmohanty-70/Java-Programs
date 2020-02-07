@@ -9,17 +9,20 @@ package com.bridgelabz.inventorymanagement;
  */
 
 import java.io.FileWriter;
+
 import org.json.simple.JSONObject;
-import com.bridgelabz.utility.Utility;
+
+import com.bridgelabz.utility.InputUtility;
 
 public class Controller
 { 
 	public static JSONObject jsonObject = new JSONObject();
-	@SuppressWarnings({ "unchecked" })
+	private static final String INVENTORY_FILE = "C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Inventory.json";
 	
+	@SuppressWarnings({ "unchecked" })
 	public static void main(String[] args) 
 	{
-		InventoryServiceInterface inventoryServices = new InventoryServices();
+		IService inventoryServices = new ServicesImplementation();
 
 		// creating a JSON object
 		
@@ -31,10 +34,10 @@ public class Controller
 			System.out.println("3. Total Weight of Products in Inventory");
 			System.out.println("4. Price(per kg)");
 			System.out.println("5. Total Price of Products in Inventory");
-			//System.out.println("6. Remove");
+
 			System.out.println("6. exit");
 
-			int choice = Utility.inputInteger();
+			int choice = InputUtility.inputInteger();
 			switch (choice) {
 			case 1: // logic to add details in inventory data
 				System.out.println("Enter a details of Rice");
@@ -46,7 +49,7 @@ public class Controller
 				System.out.println("Enter a details of Wheats");
 				jsonObject.put("Wheats", inventoryServices.addDetails());
 				
-				try(FileWriter fileWriter = new FileWriter("C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Inventory.json")) 
+				try(FileWriter fileWriter = new FileWriter(INVENTORY_FILE)) 
 				{
 					fileWriter.write(jsonObject.toString());
 					fileWriter.flush();
@@ -70,7 +73,7 @@ public class Controller
 			// for calculating the individual price of rice,wheat and pulses
 			case 4:
 				System.out.println("Enter the item name : ");
-				String item = Utility.inputString();
+				String item = InputUtility.inputString();
 				System.out.println(item + " is " + inventoryServices.price(item) + " Rs per kg.");
 				break;
 
@@ -79,29 +82,6 @@ public class Controller
 				System.out.println("Total Price of Rice,Pulses and Wheats : " + inventoryServices.totalPrice());
 				break;
 				
-//			case 6:
-//				System.out.println("Enter Item to Remove");
-//				String itemName = Utility.inputString();
-//				
-//				System.out.println("Enter Key: ");
-//				String keys1 = Utility.inputString();
-//				
-//				JSONObject rootDefault = new JSONObject();
-//				rootDefault = (JSONObject) jsonObject.get(itemName);
-//				System.out.println(rootDefault.);
-//				rootDefault.remove(keys1);
-//				
-//				try(FileWriter fileWriter = new FileWriter("C:\\Users\\Admin\\eclipse-workspace\\Object Orientend Programmings\\JSON\\Inventory.json")) 
-//				{
-//					fileWriter.write(jsonObject.toString());
-//					fileWriter.flush();
-//				} 
-//				catch (Exception e) 
-//				{
-//					System.out.println(e.getStackTrace());
-//				}
-//				break;
-
 			case 7:
 				System.out.println("Thank You");
 				System.exit(0);

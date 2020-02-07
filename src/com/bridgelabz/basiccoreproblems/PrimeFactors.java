@@ -1,7 +1,8 @@
 package com.bridgelabz.basiccoreproblems;
 
 import java.util.ArrayList;
-import com.bridgelabz.utility.Utility;
+
+import com.bridgelabz.utility.InputUtility;
 
 /**
  * 
@@ -42,7 +43,7 @@ public class PrimeFactors
 	public static void main(String[] args) 
 	{
 		System.out.println("Enter a Number: ");
-		int num = Utility.inputInteger();
+		int num = InputUtility.inputInteger();
 		@SuppressWarnings("unused")
 		checkFactors check = new checkFactors(num); //passing value to the constructor
 		

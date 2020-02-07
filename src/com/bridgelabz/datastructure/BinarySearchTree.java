@@ -10,6 +10,7 @@
 
 package com.bridgelabz.datastructure;
 
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.Utility;
 
 public class BinarySearchTree 
@@ -110,11 +111,11 @@ public class BinarySearchTree
 	{
 		BinarySearchTree binarySearchTree = new BinarySearchTree();
 		System.out.println("Enter How many Nodes you want to insert : ");
-		int totalNode = Utility.inputInteger();
+		int totalNode = InputUtility.inputInteger();
 		System.out.print("\nEnter Node Data: ");
 		for (int i = 0; i < totalNode; i++) 
 		{
-			binarySearchTree.insert(Utility.inputInteger());
+			binarySearchTree.insert(InputUtility.inputInteger());
 		}
 		System.out.println("\nInroder: \n");
 		binarySearchTree.inorder();

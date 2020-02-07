@@ -1,6 +1,6 @@
 package com.bridgelabz.datastructure;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 class Node
 {
@@ -224,28 +224,28 @@ public class LinkedList
 			System.out.println("1. Insert at first position\n2. insert at Last Position \n3. insert at Any Position\n"
 					+ "4. DIsplay List\n5. Delete Firse\n6. Delete Last\n7. Delete any\n8. Search an Item\n9. Exit"
 					+ "\nEnter your Choice: ");
-			int choice = Utility.inputInteger();
+			int choice = InputUtility.inputInteger();
 
 			switch (choice) 
 			{
 			case 1:
 				System.out.println("Enter Item");
-				int item = Utility.inputInteger();
+				int item = InputUtility.inputInteger();
 				list1.insertAtFirst(item);
 
 				break;
 
 			case 2:
 				System.out.println("Enter Item");
-				int item1 = Utility.inputInteger();
+				int item1 = InputUtility.inputInteger();
 				list1.insertAtLast(item1);
 				break;
 
 			case 3:
 				System.out.println("Enter Position to Enter Value: ");
-				int pos = Utility.inputInteger();
+				int pos = InputUtility.inputInteger();
 				System.out.println("Enter Item");
-				int item2 = Utility.inputInteger();
+				int item2 = InputUtility.inputInteger();
 				list1.insertAtPosition(item2, pos);
 
 				break;
@@ -264,21 +264,20 @@ public class LinkedList
 
 			case 7:
 				System.out.print("\nEnter Position to delete: ");
-				int position = Utility.inputInteger();
+				int position = InputUtility.inputInteger();
 				list1.deleteAtPosition(position);
 
 				break;
 				
 			case 8:
 				System.out.println("\nEnter Value You want to search: ");
-				int val = Utility.inputInteger();
+				int val = InputUtility.inputInteger();
 				list1.search(val);					
 				break;
 
 			case 9:
 				flag = false;
 				break;
-
 			default:
 				System.out.println("Invalid Position");
 				break;

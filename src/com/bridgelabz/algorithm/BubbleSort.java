@@ -1,6 +1,6 @@
 package com.bridgelabz.algorithm;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 /**
  * 
@@ -16,7 +16,7 @@ public class BubbleSort
 	public static void main(String[] args) 
 	{
 		System.out.println("Enter Total Nos. of Array Elements You Want To sort: ");
-		int totalElements = Utility.inputInteger();
+		int totalElements = InputUtility.inputInteger();
 		int arr[] = new int[totalElements];
 		
 		System.out.println("Enter " +totalElements+ " Array Elements: ");
@@ -26,7 +26,7 @@ public class BubbleSort
 		 */
 		
 		for(int i = 0; i < totalElements; i++)
-			arr[i] = Utility.inputInteger();
+			arr[i] = InputUtility.inputInteger();
 		
 		BubbleSort bs = new BubbleSort();
 		bs.sort(arr, totalElements);

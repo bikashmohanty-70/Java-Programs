@@ -1,6 +1,6 @@
 package com.bridgelabz.algorithm;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 public class MergeSort 
 {
@@ -13,13 +13,13 @@ public class MergeSort
 		MergeSort merge1 = new MergeSort();
 	
 		 System.out.println("How MAny Elements do u want to Insert?"); int
-		 totalElements = Utility.inputInteger();
+		 totalElements = InputUtility.inputInteger();
 		 
 		 int [] inputArray = new int[totalElements];
 		 
 		 System.out.print("\nEnter array elements to sort Using Merge Sort: ");
 		 for(int i = 0; i < totalElements; i++) inputArray[i] =
-		 Utility.inputInteger();
+		 InputUtility.inputInteger();
 		 
 		 System.out.println("Before Sorting"); 
 		 

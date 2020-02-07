@@ -1,5 +1,6 @@
 package com.bridgelabz.basiccoreproblems;
 
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.Utility;
 
 /**
@@ -17,7 +18,7 @@ public class LeapYear
 	public static void main(String[] args) 
 	{
 		System.out.println("Enter any Year: ");
-		int year = Utility.inputInteger();
+		int year = InputUtility.inputInteger();
 		boolean isChecking = false;
 		while(!isChecking)
 		{

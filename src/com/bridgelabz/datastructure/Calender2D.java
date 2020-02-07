@@ -1,5 +1,6 @@
 package com.bridgelabz.datastructure;
 
+import com.bridgelabz.utility.InputUtility;
 /**
  * @Author   :  Bikash Mohanty
  * @Version  :  1.0
@@ -16,9 +17,9 @@ public class Calender2D {
 	public static void main(String[] args) {
 
 		System.out.println("Enter a month : ");
-		int month = Utility.inputInteger();
+		int month = InputUtility.inputInteger();
 		System.out.println("Enter a year : ");
-		int year = Utility.inputInteger();
+		int year = InputUtility.inputInteger();
 
 		int month1, x, day = 1, day1, year1;
 

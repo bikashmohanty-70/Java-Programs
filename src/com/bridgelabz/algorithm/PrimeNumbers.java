@@ -9,6 +9,7 @@ package com.bridgelabz.algorithm;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.Utility;
 
 public class PrimeNumbers 
@@ -64,7 +65,7 @@ public class PrimeNumbers
 	public static void main(String[] args) 
 	{
 		System.out.println("Enter Range: ");
-		int num = Utility.inputInteger();
+		int num = InputUtility.inputInteger();
 		
 		@SuppressWarnings("unused")
 		PrimeNumbers prime = new PrimeNumbers(num);

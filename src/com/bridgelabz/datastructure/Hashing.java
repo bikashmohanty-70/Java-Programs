@@ -2,6 +2,7 @@ package com.bridgelabz.datastructure;
 
 
 import com.bridgelabz.utility.HashingFunction;
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.Utility;
 /**
  * @author Rupeshp007
@@ -38,7 +39,7 @@ public class Hashing
 		}
 		
 		System.out.println("Enter the Number you want to search");
-		int search=Utility.inputInteger();
+		int search=InputUtility.inputInteger();
 		SearchElement(search);
 	}
 	

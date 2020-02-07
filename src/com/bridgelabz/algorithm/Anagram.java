@@ -1,5 +1,6 @@
 package com.bridgelabz.algorithm;
 
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.Utility;
 
 /**
@@ -18,9 +19,9 @@ public class Anagram
 	public static void main(String[] args) 
 	{
 		System.out.print("Enter A string:");
-		String str1 = Utility.inputString();
+		String str1 = InputUtility.inputString();
 		System.out.println("Enter Anagram Of that String: ");
-		String str2 = Utility.inputString();
+		String str2 = InputUtility.inputString();
 		
 		if(Utility.isAnagram(str1, str2))
 			System.out.println("The Strings Are Anagram");

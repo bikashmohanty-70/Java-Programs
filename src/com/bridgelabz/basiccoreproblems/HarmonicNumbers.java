@@ -1,6 +1,6 @@
 package com.bridgelabz.basiccoreproblems;
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 /**
  *  
@@ -38,7 +38,7 @@ class HarmonicNumbers
 
 	public static void main (String[] args) { 
 		System.out.println("Enter a NUmber: ");
-		int num = Utility.inputInteger();
+		int num = InputUtility.inputInteger();
 
 		System.out.print(harmonicNumbers(num)); 
 

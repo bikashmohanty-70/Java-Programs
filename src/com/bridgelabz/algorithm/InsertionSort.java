@@ -1,7 +1,7 @@
 package com.bridgelabz.algorithm;
 
 
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 /**
  * 
@@ -18,7 +18,7 @@ public class InsertionSort
 	public static void main(String[] args) 
 	{
 		System.out.println("How Many Numbers of Elements Do u Wnat to Inser? : ");
-		int elements = Utility.inputInteger();
+		int elements = InputUtility.inputInteger();
 		System.out.println("TOtal SIze = " +elements);
 		String str[] = new String[elements]; // Total number of words/elements to be taken as input in the string array
 		System.out.println("Entre Words To Sort: ");
@@ -28,7 +28,7 @@ public class InsertionSort
 		 */
 		for(int i = 0; i < elements; i++)
 		{
-			str[i] = Utility.inputString();
+			str[i] = InputUtility.inputString();
 			
 		}
 		String[] strResult = insertionSort(str, str.length); // Method will return string array object that carries the Sorted result

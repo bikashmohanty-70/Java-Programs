@@ -1,12 +1,6 @@
 package com.bridgelabz.address_book;
-/**
- * @author Bikash Mohanty
- * @since 5th Dec 2019
- * @version 1.0
- * 
- * Purpose: Address Book
- */
-import com.bridgelabz.utility.Utility;
+
+import com.bridgelabz.utility.InputUtility;
 
 public class Controller 
 {
@@ -24,7 +18,7 @@ public class Controller
 			System.out.println("5. Exit");
 			
 			System.out.println("Enter Your Choice: ");
-			choice = Utility.inputInteger();
+			choice = InputUtility.inputInteger();
 			
 			switch (choice) 
 			{

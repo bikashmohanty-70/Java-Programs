@@ -1,19 +1,6 @@
 package com.bridgelabz.junit;
 
-/**
- * @author Bikash Mohanty
- * @version 1.0
- * @CreatedOn: 21st Nov 2019\
- * 
- * Purpose:  There is 1, 2, 5, 10, 50, 100, 500 and 1000 Rs/- Notes which can 
- * be returned by Vending Machine. 
- * 
- * This Program will calculate the minimum
- * number of Notes as well as the Notes to be returned by the Vending Machine
- * as a Change
- */
-
-import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.InputUtility;
 
 public class VendingMachine 
 {
@@ -21,7 +8,7 @@ public class VendingMachine
 	public static void main(String[] args) 
 	{
 		System.out.println("Enter Amount: ");
-		int amount = Utility.inputInteger();
+		int amount = InputUtility.inputInteger();
 		/**
 		 * @param: Calling method name with amount needed and the array of money present
 		 * 		   in the vending machine as parameter.

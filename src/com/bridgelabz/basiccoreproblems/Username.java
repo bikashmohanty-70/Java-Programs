@@ -1,5 +1,6 @@
 package com.bridgelabz.basiccoreproblems;
 
+import com.bridgelabz.utility.InputUtility;
 import com.bridgelabz.utility.Utility;
 
 /**
@@ -22,7 +23,7 @@ public class Username
 		while(!check) //When check become true loop exits
 		{
 			System.out.println("Eneter Username (Must have 3 characters): ");
-			userName = Utility.inputString(); // Calling inputString() from Utility class
+			userName = InputUtility.inputString(); // Calling inputString() from Utility class
 			
 			/**
 			 * if entered string doesn't have 3 characters in it then it will ask user to
